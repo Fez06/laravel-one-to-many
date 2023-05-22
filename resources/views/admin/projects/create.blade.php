@@ -26,6 +26,7 @@
     <label for="image">Inserisci un'immagine:</label>
     <input type="file" class='form-control' name="image" id="image">
 
+    <label for="type_id" class="form-label">Type</label>
     <select class="form-select" name="type_id" id="type_id">
         <option value="">Select type:</option>
         @foreach ($types as $type)
