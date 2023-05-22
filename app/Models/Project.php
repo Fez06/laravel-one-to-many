@@ -11,4 +11,8 @@ class Project extends Model
 
     protected $guarded = ['slug'];
     protected $fillable = ['title', 'description', 'image'];
+
+    public function type() {
+        return $this->belongsTo(Type::class);
+    }
 }
